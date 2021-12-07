@@ -28,9 +28,9 @@ const create_item = () => {
   let input = document.createElement("input");
   item.appendChild(input);
 
-  let btn_save = document.createElement("button");
-  btn_save.innerHTML = "Save";
-  btn_save.addEventListener("click", () => {
+  let save_btn = document.createElement("button");
+  save_btn.innerHTML = "Save";
+  save_btn.addEventListener("click", () => {
     error.innerHTML = "";
     if (input.value !== "") {
       order += 1;
